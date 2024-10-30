@@ -1,6 +1,19 @@
-<footer class="footer wrap pale">
-  <p>&copy;&nbsp;<span class="year"></span>&nbsp;{{ site.Title }}</p>
-  <p class="attribution upcase">{{ safeHTML (T "designed_by" site.Data.designer) }}</p>
+<footer class="">
+  <div class="logos">
+    <a href="https://www.orfis.gob.mx/"><img src="/images/footer/ORFIS.png"></a>
+    <a href="https://fiscaliaveracruz.gob.mx/combate-a-la-corrupcion/"><img src="/images/footer/FECCEV.png"></a>
+    <a href="https://www.veracruz.gob.mx/contraloria/"><img src="/images/footer/CGE.png"></a>
+    <a href="https://www.pjeveracruz.gob.mx/"><img src="/images/footer/PJ.png"></a>
+    <a href="https://ivai.org.mx/"><img src="/images/footer/IVAI.png"></a>
+    <a href="https://www.trijaev.gob.mx/"><img src="/images/footer/TRIJAEV.png"></a>
+    <a href=""><img src="/images/footer/CPC.png"></a>
+    <a href="http://seseav.veracruz.gob.mx/"><img src="/images/footer/SESEAVER.png"></a>
+  </div>
+  <div class="footer wrap pale">
+    <p>&copy;&nbsp;<span class="year"></span>&nbsp;{{ site.Title }}</p>
+    <p class="attribution upcase">Instituto Tecnologico Superior de Xalapa<br>SESEAVER</p>
+  </div>
+  
 </footer>
 {{ $scriptPath := "js/index.js" }}
 {{ $scripts := resources.Get $scriptPath | resources.ExecuteAsTemplate $scriptPath . | resources.Minify | resources.Fingerprint "sha512" }}

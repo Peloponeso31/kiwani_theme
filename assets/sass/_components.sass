@@ -8,7 +8,7 @@
     &:not(.visible)
       height: 0
       opacity: 0
-    transition: height 0.5s, opacity 0.5s
+      transition: height 0.5s, opacity 0.5s
   &_excerpt,
   &_meta
     transform-origin: bottom
@@ -167,6 +167,17 @@
   &:hover::before
     opacity: 1
 
+.logos
+  display: flex
+  flex-direction: row
+  justify-content: center
+  a
+    max-width: 120px
+    img
+        height: auto
+        margin: 0
+    
+
 .footer
   padding: 0
   color: var(--text)
@@ -182,7 +193,7 @@
     padding-bottom: 1.5rem !important
 
   a
-    color:var(--theme)
+    color: var(--theme)
     opacity: 0.8
     transition: opacity 0.3s ease-in-out
     &:hover
