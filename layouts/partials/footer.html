@@ -9,11 +9,11 @@
     <a href=""><img src="/images/footer/CPC.png"></a>
     <a href="http://seseav.veracruz.gob.mx/"><img src="/images/footer/SESEAVER.png"></a>
   </div>
+  
   <div class="footer wrap pale">
     <p>&copy;&nbsp;<span class="year"></span>&nbsp;{{ site.Title }}</p>
     <p class="attribution upcase">Instituto Tecnologico Superior de Xalapa<br>SESEAVER</p>
   </div>
-  
 </footer>
 {{ $scriptPath := "js/index.js" }}
 {{ $scripts := resources.Get $scriptPath | resources.ExecuteAsTemplate $scriptPath . | resources.Minify | resources.Fingerprint "sha512" }}
